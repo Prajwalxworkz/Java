@@ -7,7 +7,12 @@ import java.util.TreeSet;
 
 public class SetRunner {
     public static void main(String[] args) {
-        Collection collection1=new HashSet<>();
+        //HashSet, LinkedHashSet, TreeSet are the implementation classes which implements Set
+        //LinkedHashSet is a subclass (extends) of HashSet and implements Set
+        //TreeSet implements NavigableSet which in turn extends SortedSet
+
+        
+        Collection collection1=new HashSet<>(); //It accepts heterogenous values and displays values randomly
         collection1.add(11);
         collection1.add(23);
         collection1.add(2);
@@ -22,7 +27,7 @@ public class SetRunner {
         System.out.println("size:"+collection1.size());
         System.out.println("---------------------------");
 
-        Collection collection2=new LinkedHashSet();
+        Collection collection2=new LinkedHashSet(); //It accepts heterogenous values and displays values in the order of insertion
         collection2.add(11);
         collection2.add(23);
         collection2.add(2);
@@ -37,7 +42,7 @@ public class SetRunner {
         System.out.println("size:"+collection2.size());
         System.out.println("---------------------------");
 
-        Collection collection3=new TreeSet();
+        Collection collection3=new TreeSet(); //It accepts homogenous values and displays it in sorted order(ascending order)
         collection3.add(11);
         collection3.add(23);
         collection3.add(2);
