@@ -1,9 +1,18 @@
+// collection is an interface which manages other objects through implementation classes which are built on some standard data structure.
+//collection helps us to achieve loose coupling 
+//loose coupling: change in implementation but does not affect the functionality
+
 package com.xworkz.fundamentals;
 
 import java.util.*;
 
 public class ListRunner {
     public static void main(String[] args) {
+        // ArrayList, LinkedList, Vector are the implementation classes which implements List 
+        //List extends Collection
+        //Vector extends Stack
+        //All 3 implementation classes accept heterogeneous values and displays it in the same order of insertion
+        
         Collection collection1=new ArrayList<>();
         collection1.add(11);
         collection1.add(23);
@@ -18,7 +27,6 @@ public class ListRunner {
         System.out.println(collection1);
         System.out.println("size:"+collection1.size());
         System.out.println("---------------------------");
-
 
         Collection collection2=new LinkedList();
         collection2.add(11);
@@ -35,6 +43,7 @@ public class ListRunner {
         System.out.println("size:"+collection2.size());
         System.out.println("---------------------------");
 
+    
         Collection collection3=new Vector();
         collection3.add(11);
         collection3.add(23);
