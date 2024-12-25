@@ -5,13 +5,16 @@ import java.util.PriorityQueue;
 
 public class QueueRunner {
     public static void main(String[] args) {
+        // PriorityQueue is an implementation class which implements Queue
+        //Queue extends Collection
+        //It accepts only homogeneous values and diplayed values are not in the order of insertion
         Collection collection1=new PriorityQueue();
         try {
             collection1.add(11);
             collection1.add(23);
             collection1.add(2);
             collection1.add(1);
-            collection1.add(1);
+            collection1.add(1);  // After this insertion exception occurs(ClassCastException) 
             collection1.add("13");
             collection1.add("21");
             collection1.add("10");
@@ -29,7 +32,7 @@ public class QueueRunner {
             collection2.add("23");
             collection2.add("b");
             collection2.add("7877");
-            collection2.add("string");
+            collection2.add("string");  // After this insertion exception occurs(ClassCastException) 
             collection2.add(1.1);
             collection2.add(232);
             collection2.add(1.0d);
